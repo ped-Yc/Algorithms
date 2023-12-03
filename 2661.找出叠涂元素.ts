@@ -1,17 +1,19 @@
 // https://leetcode.cn/problems/first-completely-painted-row-or-column/?envType=daily-question&envId=2023-12-01
 
-arr = [1, 3, 4, 2];
-mat = [
+export {};
+const arr: number[] = [1, 3, 4, 2];
+const mat: number[][] = [
   [1, 4],
   [2, 3],
 ];
+
 
 /**
  * @param {number[]} arr
  * @param {number[][]} mat
  * @return {number}
  */
-var firstCompleteIndex = function (arr, mat) {
+function firstCompleteIndex(arr: number[], mat: number[][]) {
   // 利用flagMap记录涂色元素在矩阵中的位置
   // 利用rowArr,colArr记录行列上的涂色元素数量,若rowArr[i]=mat[0].length或colArr[j]=mat.length即行内元素全被涂满
   const m = mat[0].length;
@@ -37,6 +39,6 @@ var firstCompleteIndex = function (arr, mat) {
     }
   }
   return -1;
-};
-i = firstCompleteIndex(arr, mat);
+}
+let i = firstCompleteIndex(arr, mat);
 console.log(i);
