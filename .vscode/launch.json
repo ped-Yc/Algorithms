@@ -8,8 +8,15 @@
       "name": "ts-node", // 配置名称
       "type": "node", // 配置类型，TS通过node调试
       "request": "launch", // 请求配置类型
+      "args": [
+        "${relativeFile}" // ${relativeFile} 是表示当前打开的文件
+      ],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "internalConsoleOptions": "openOnSessionStart",
       "program": "${workspaceFolder}/${relativeFile}", // 代码入口文件，绝对路径
-      "preLaunchTask": "tsc:watch - tsconfig.json",
+      "preLaunchTask": "tsc:build - tsconfig.json",
       // "preLaunchTask": "tsc: build - tsconfig.json", // 调试前需要做的任务,这一行注释掉也没问题。
       // "args": ["${relativeFile}"], // 传递的参数
       // "cwd": "${workspaceRoot}", // cd到根目录

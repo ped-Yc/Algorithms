@@ -20,11 +20,10 @@ function carPooling(trips: number[][], capacity: number): boolean {
   let cur = capacity;
   let stopArr = new Array(1000).fill(0);
   trips.sort((a, b) => b[1] - a[1]);
-  for()
   let fromArr,
     toArr = new Map();
   for (let i = 0; i < trips.length; i++) {
-    fromArr.set(trips[i][1], trips[i][0]);
+    // fromArr.set(trips[i][1], trips[i][0]);
     toArr.set(trips[i][2], trips[i][0]);
     if (cur < 0) return false;
   }
