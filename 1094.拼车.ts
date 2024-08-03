@@ -11,6 +11,7 @@ const trips = [
  * @param {number} capacity
  * @return {boolean}
  */
+
 function carPooling(trips: number[][], capacity: number): boolean {
   // 新建一个current记录当前空座位数,当座位数小于0时返回false
   // 新建一个stop数组记录站点人数
@@ -29,3 +30,5 @@ function carPooling(trips: number[][], capacity: number): boolean {
   }
   return false;
 }
+
+carPooling(trips, capacity);

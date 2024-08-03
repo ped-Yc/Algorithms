@@ -16,7 +16,7 @@
       "protocol": "inspector",
       "internalConsoleOptions": "openOnSessionStart",
       "program": "${workspaceFolder}/${relativeFile}", // 代码入口文件，绝对路径
-      "preLaunchTask": "tsc:build - tsconfig.json",
+      "preLaunchTask": "tsc: build - tsconfig.json",
       // "preLaunchTask": "tsc: build - tsconfig.json", // 调试前需要做的任务,这一行注释掉也没问题。
       // "args": ["${relativeFile}"], // 传递的参数
       // "cwd": "${workspaceRoot}", // cd到根目录

@@ -1,0 +1,24 @@
+"use strict";
+function nextBeautifulNumber(n) {
+    // 思路：题目约束n<=10^6，创建7位数内的所有平衡数数组，找出大于n的平衡数即可
+    // 数值平衡数和数位的关系：
+    // 数位1：1
+    // 数位2：22
+    // 数位3：333、122、221
+    // 数位4：4444、1333、3331
+    // 数位5：55555、14444、44441
+    // 可以看出
+    // 1.数位上的数字不会大于最大数位;
+    // 2.数位为n的最大平衡数为nnn...，最小平衡数为1(n-1)(n-1)...
+    // 存放平衡数的数组
+    let bfnArr = new Array(100).fill(0);
+    for (let digital = 1; digital < 8; digital++) {
+        // 平衡数的数组形式
+        let bfn = new Array(10).fill(0);
+        bfn[digital];
+    }
+    for (let i = n + 1; i < 55555; i++) { }
+    return 1;
+}
+nextBeautifulNumber(100);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMjA0OC7kuIvkuIDkuKrmm7TlpKfnmoTmlbDlgLzlubPooaHmlbAuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8yMDQ4LuS4i+S4gOS4quabtOWkp+eahOaVsOWAvOW5s+ihoeaVsC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsU0FBUyxtQkFBbUIsQ0FBQyxDQUFTO0lBQ3BDLDRDQUE0QztJQUU1QyxlQUFlO0lBQ2YsUUFBUTtJQUNSLFNBQVM7SUFDVCxrQkFBa0I7SUFDbEIscUJBQXFCO0lBQ3JCLHdCQUF3QjtJQUN4QixPQUFPO0lBQ1Asb0JBQW9CO0lBQ3BCLDJDQUEyQztJQUUzQyxXQUFXO0lBQ1gsSUFBSSxNQUFNLEdBQUcsSUFBSSxLQUFLLENBQUMsR0FBRyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDO0lBQ3BDLEtBQUssSUFBSSxPQUFPLEdBQUcsQ0FBQyxFQUFFLE9BQU8sR0FBRyxDQUFDLEVBQUUsT0FBTyxFQUFFLEVBQUUsQ0FBQztRQUM3QyxXQUFXO1FBQ1gsSUFBSSxHQUFHLEdBQUcsSUFBSSxLQUFLLENBQUMsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDO1FBQ2hDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUNmLENBQUM7SUFFRCxLQUFLLElBQUksQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLEVBQUUsQ0FBQyxHQUFHLEtBQUssRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUEsQ0FBQztJQUN0QyxPQUFPLENBQUMsQ0FBQztBQUNYLENBQUM7QUFFRCxtQkFBbUIsQ0FBQyxHQUFHLENBQUMsQ0FBQyJ9
