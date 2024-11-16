@@ -22,7 +22,7 @@ tabWidth: 2
 useTabs: false
 
 # 在语句的末尾打印分号
-semi: false
+semi: true
 
 # 使用单引号而不是双引号
 singleQuote: true

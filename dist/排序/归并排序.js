@@ -1,3 +1,0 @@
-"use strict";
-// 归并排序
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoi5b2S5bm25o6S5bqPLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4v5o6S5bqPL+W9kuW5tuaOkuW6jy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyJ9
